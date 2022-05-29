@@ -1,0 +1,98 @@
+@import url('http://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins',sans-serif;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    background: #dcdcdc;
+
+}
+.container
+{
+    position: relative;
+    width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 20px;
+    padding: 20px;
+
+}
+.container .card
+{
+    width: 100%;
+    background: #ffff;
+
+}
+.container .card .imgBx
+{
+    position: relative;
+    width: 100%;
+    height: 310px;
+    overflow: hidden;
+}
+.container .card .imgBx img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s ease-in-out;
+    transform-origin: right;
+}
+
+.container .card:hover .imgBx img
+{
+ transform: scale(1.15);
+}
+
+.container .card .content
+{
+    font-size: 18px;
+    font-weight: 500;
+    color: #ffff;
+    margin: 5px 0;
+
+}
+.container .card .content .productName h3
+{
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    margin-left: 5px;
+}
+.container .card .content .availability
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 5px;
+}
+
+.container .card .content .availability h2
+{
+    font-size: 20px;
+    color: #ff2020;
+    font-weight: 500;
+    margin-left: 5px;
+}
+.container .card .content .availability .fa
+{
+    color: #ffd513;
+    cursor: pointer;
+   
+}
+.container .card .content .availability .fa.grey
+{
+    color: #ccc;
+
+}

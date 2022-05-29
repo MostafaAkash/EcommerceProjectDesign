@@ -1,0 +1,109 @@
+{% load static %}
+{% static "calc/images" as baseUrl %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Electronics ecommerce</title>
+    <link rel="stylesheet" href="{% static 'calc/styles/style.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Molengo&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header">
+        <div class="box">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="{% static 'calc/images/logo.png' %}" width="125px">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="phones" class="btn">Phones</a></li>
+                        <li><a href="tablet">Tablets</a></li>
+                        <li><a href="television">Televisions</a></li>
+                        <li><a href="computer">Computers</a></li>
+                        <li><a href="gaming">Gaming Systems</a></li>
+                        <li><a href="about">About</a></li>
+                        <li><a href="contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="home">
+        <div class="row">
+            <div class="coloum">
+                <h1>Y Tech</h1>
+                <hr>
+                <p>Brief Description</p>
+                <img src="{% static 'calc/images/logo.png' %}" class="center">
+            </div>
+            <div class="coloum">
+                <img src="{% static 'calc/images/Phone.png' %}">
+            </div>
+        </div>
+    </div>
+    <div class="products">
+        <h1>Latest Products</h1>
+        <div class="row">
+            <div class="c4">
+                <h2>Panaphonics G6</h2>
+            </div>
+            <div class="c4">
+                <h2>Magnetbox 1.67K</h2>
+            </div>
+            <div class="c4">
+                <h2>Sorny Wavo</h2>
+            </div>
+            <div class="c4">
+                <h2>Y System</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="c4">
+                <img src="{% static 'calc/images/Tablet.png' %}">
+            </div>
+            <div class="c4">
+                <img src="{% static 'calc/images/tv.png' %}">
+            </div>
+            <div class="c4">
+                <img src="{% static 'calc/images/laptop.png' %}">
+            </div>
+            <div class="c4">
+                <img src="{% static 'calc/images/ps5.png' %}">
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="row">
+            <div class="c3">
+            </div>
+            <div class="c3">
+            </div>
+            <div class="c3">
+            </div>
+        </div>
+        <div class="row">
+            <div class="c3">
+                <img src="{% static 'calc/images/logo.png' %}">
+            </div>
+            <div class="c3">
+                <h3>Contact Details</h3>
+                <p>Phone: (02) 4568 2445</p>
+                <p>Email: ytech@yahoo.com</p>
+            </div>
+            <div class="c3">
+                <h3>Address</h3>
+                <p>23 Hunter Street</p>
+                <p>Broome W.A 6725</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

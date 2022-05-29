@@ -1,0 +1,66 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About Us Section</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'calc/styles/about_style.css' %}">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+	
+</head>	
+<body>
+    <div class="header">
+        <div class="box">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="{% static 'calc/images/logo.png' %}" width="125px">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="{% url 'home_page'%}">Home</a></li>
+                        <li><a href="phones" class="btn">Phones</a></li>
+                        <li><a href="tablet">Tablets</a></li>
+                        <li><a href="television">Televisions</a></li>
+                        <li><a href="computer">Computers</a></li>
+                        <li><a href="gaming">Gaming Systems</a></li>
+                        <li><a href="about">About</a></li>
+                        <li><a href="contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+	<div class="section">
+		<div class="container">
+			<div class="content-section">
+				<div class="title">
+					<h1>About Us</h1>
+				</div>
+				<div class="content">
+					<h3>Y Tech , Making Life Easier</h3>
+					<p>Our main mission how can we develop our services and provide genuine product 
+                        in time. We train employees in such a way, so that they make our customer Happier. 
+                        We try to provide best product in the market in large number.
+                        Occationally we offer some discount on product prices considering 
+                        development of our Business. For Any reason customer can contact with us easily.
+
+                    </p>
+					<div class="button">
+						<a href="">Read More</a>
+					</div>
+				</div>
+				<div class="social">
+					<a href=""><i class="fab fa-facebook-f"></i></a>
+					<a href=""><i class="fab fa-twitter"></i></a>
+					<a href=""><i class="fab fa-instagram"></i></a>
+				</div>
+			</div>
+			<div class="image-section">
+				<img src="{% static 'calc/images/pic_about_3.jpg' %}">
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>
